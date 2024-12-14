@@ -8,4 +8,32 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Cart\" />
+    <None Remove="Views\Contact\" />
+    <None Remove="Views\Error\" />
+    <None Remove="Views\About\" />
+    <None Remove="Views\News\" />
+    <None Remove="Views\Shop\" />
+    <None Remove="Views\SIngleNews\" />
+    <None Remove="Views\SingleProduct\" />
+    <None Remove="Data\" />
+    <None Remove="Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Cart\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Views\Error\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="Views\News\" />
+    <Folder Include="Views\Shop\" />
+    <Folder Include="Views\SIngleNews\" />
+    <Folder Include="Views\SingleProduct\" />
+    <Folder Include="Data\" />
+    <Folder Include="Entities\" />
+  </ItemGroup>
 </Project>

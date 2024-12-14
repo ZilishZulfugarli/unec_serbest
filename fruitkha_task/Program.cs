@@ -1,5 +1,12 @@
 ﻿var builder = WebApplication.CreateBuilder(args);
 
+string? sqlServerConnection = builder.Configuration
+  .GetConnectionString("DefaultConnection");
+if (sqlServerConnection is null)
+{
+    Console.WriteLine("SQL Server database connection string is missing!");
+}
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
